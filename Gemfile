@@ -17,6 +17,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # BDD
 gem 'capybara'
+# TDD
+gem 'rspec-rails'
 
 gem 'haml'
 # bundle exec rake doc:rails generates the API under doc/api.

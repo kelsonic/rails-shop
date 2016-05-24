@@ -1,7 +1,9 @@
 require 'test_helper'
 
-class CartTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+describe Cart do
+
+  it 'validates stuff' do
+    expect(1+1).to eq(2)
+  end
+
 end
