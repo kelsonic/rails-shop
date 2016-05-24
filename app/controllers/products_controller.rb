@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_action :set_cart
+  before_action :set_session
 
   include CartsHelper
 
@@ -75,7 +75,7 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:name, :image_url, :description, :inventory_quantity)
     end
 
-    def set_cart
+    def set_session
       cart_session
     end
 end

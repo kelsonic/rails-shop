@@ -1,5 +1,5 @@
 class CartsController < ApplicationController
-  before_action :set_cart
+  before_action :set_session
 
   include CartsHelper
 
@@ -8,11 +8,7 @@ class CartsController < ApplicationController
   end
 
   private
-    def set_cart
+    def set_session
       cart_session
-    end
-
-    def cart_params
-
     end
 end
