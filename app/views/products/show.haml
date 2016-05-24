@@ -1,0 +1,19 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @product.name
+%p
+  %strong Image url:
+  = image_tag(@product.image_url)
+%p
+  %strong Price:
+  $#{@product.price}
+%p
+  %strong Description:
+  = @product.description
+%p
+  %strong Inventory quantity:
+  = @product.inventory_quantity
+= link_to 'Edit', edit_product_path(@product)
+|
+\#{link_to 'Back', products_path}

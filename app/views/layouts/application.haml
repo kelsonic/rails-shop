@@ -1,0 +1,8 @@
+!!!
+%html
+  %head= render 'layouts/head'
+  %body
+    %header= render 'layouts/nav'
+    %main= yield
+    = render 'layouts/footer'
+    = render 'layouts/scripts'
